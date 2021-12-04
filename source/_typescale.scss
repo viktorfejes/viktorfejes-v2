@@ -1,0 +1,94 @@
+@use 'sass:math';
+
+// Typography
+$main-font-family:   'Outfit', sans-serif;
+$base-font-size:     21; // in px
+$base-line-height:   1.95rem; // in rem
+$modular-scale:      1.25;
+
+@mixin root {
+    font-size: $base-font-size * 1px;
+    font-size: $base-font-size / 16 * 100%;
+    line-height: $base-line-height;
+}
+
+@mixin body {
+    font-size: 1rem;
+    line-height: $base-line-height;
+}
+
+$small: calc(1rem / $modular-scale);
+$h6: 1rem;
+$h5: $modular-scale * $h6;
+$h4: $modular-scale * $h5;
+$h3: $modular-scale * $h4;
+$h2: $modular-scale * $h3;
+$h1: $modular-scale * $h2;
+
+@mixin h5 {
+    font-size: $h5;
+    font-weight: 600;
+    line-height: $base-line-height;
+    margin-top: $base-line-height;
+}
+
+@mixin h4 {
+    font-size: $h4;
+    font-weight: 600;
+    line-height: $base-line-height *1.5;
+    margin-top: $base-line-height;
+}
+
+@mixin h3 {
+    font-size: $h3;
+    font-weight: 600;
+    line-height: $base-line-height * 2;
+    margin-top: $base-line-height;
+}
+
+@mixin h2 {
+    font-size: $h2;
+    font-weight: 700;
+    line-height: $base-line-height * 2;
+    margin-top: $base-line-height;
+    margin-bottom: $base-line-height;
+}
+
+@mixin h1 {
+    font-size: $h1;
+    font-weight: 200;
+    line-height: $base-line-height * 2;
+    margin-top: $base-line-height;
+    margin-bottom: $base-line-height * 2;
+}
+
+@mixin p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: $base-line-height;
+}
+
+@mixin small {
+    font-size: $small;
+    font-weight: 400;
+}
+
+@mixin smallCaps {
+    font-size: $small / $modular-scale;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@mixin type-grid {
+    content: '';
+    display: block;
+    // display: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    pointer-events: none;
+    user-select: none;
+    top: 0px;
+    height: 2500px;
+    background: linear-gradient(rgba(180, 180, 180, 0.2) 1px, transparent 1px) left top / $base-line-height $base-line-height;
+}
