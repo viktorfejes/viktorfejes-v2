@@ -109,17 +109,34 @@ body {
   line-height: 1.95rem;
 }
 
+.logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #191919;
+  border-radius: 50%;
+  padding: 18px 15px 15px;
+}
+.logo svg {
+  color: white;
+  display: block;
+  fill: white;
+}
+
 .container {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 1.95rem 0 0 0;
+  padding: 1.95rem 1rem 1.95rem 1rem;
+}
+
+.text {
+  margin-top: 7rem;
 }
 
 .title {
   width: 100%;
-  background-color: #222;
-  color: #fff;
+  color: #222;
   padding: 2rem 0 5rem 0;
 }
 
@@ -127,17 +144,6 @@ body {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-}
-
-.logo {
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-.logo svg {
-  color: white;
-  display: block;
-  fill: white;
 }
 
 .links {
@@ -166,13 +172,16 @@ body {
 
 h1 {
   font-size: 3.0517578125rem;
-  font-weight: 200;
+  font-weight: 700;
   line-height: 3.9rem;
   margin-top: 1.95rem;
   margin-bottom: 3.9rem;
   font-weight: 200;
   max-width: 920px;
-  line-height: 4.875rem;
+  color: #191919;
+  font-size: 64px;
+  line-height: 1.4;
+  margin-bottom: 5.46rem;
 }
 
 p {
@@ -182,7 +191,7 @@ p {
   margin-top: 1.95rem;
   font-weight: 200;
   line-height: 2.535rem;
-  color: #5b5e61;
+  color: #222;
 }
 
 .bio {
@@ -190,7 +199,23 @@ p {
 }
 .bio a {
   color: inherit;
-  text-decoration: underline;
+  font-weight: 400;
+  position: relative;
+}
+.bio a::before {
+  content: "";
+  top: 100%;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(109.6deg, #ff1886 11.2%, #fce844 52%, #35b2ef 100.2%);
+  border-radius: 2rem;
+}
+.bio a:hover {
+  color: #1e90ff;
+}
+.bio a:hover::before {
+  background: #1e90ff;
 }
 
 .button {
@@ -203,6 +228,7 @@ p {
 .label {
   font-size: 0.8rem;
   font-weight: 400;
+  margin-bottom: 1.95rem;
   text-transform: uppercase;
 }
 
@@ -229,6 +255,19 @@ p {
 }
 .switch-circle.long {
   transform: translateX(100%);
+}
+
+.expand-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #7a7a7a;
+  cursor: pointer;
+  margin-top: 1.95rem;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

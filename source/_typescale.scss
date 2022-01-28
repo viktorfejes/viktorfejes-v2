@@ -35,7 +35,7 @@ $h1: $modular-scale * $h2;
 @mixin h4 {
     font-size: $h4;
     font-weight: 600;
-    line-height: $base-line-height *1.5;
+    line-height: $base-line-height;
     margin-top: $base-line-height;
 }
 
@@ -56,7 +56,7 @@ $h1: $modular-scale * $h2;
 
 @mixin h1 {
     font-size: $h1;
-    font-weight: 200;
+    font-weight: 700;
     line-height: $base-line-height * 2;
     margin-top: $base-line-height;
     margin-bottom: $base-line-height * 2;
@@ -71,24 +71,11 @@ $h1: $modular-scale * $h2;
 @mixin small {
     font-size: $small;
     font-weight: 400;
+    margin-bottom: $base-line-height;
 }
 
 @mixin smallCaps {
     font-size: $small / $modular-scale;
     font-weight: 400;
     text-transform: uppercase;
-}
-
-@mixin type-grid {
-    content: '';
-    display: block;
-    // display: none;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    pointer-events: none;
-    user-select: none;
-    top: 0px;
-    height: 2500px;
-    background: linear-gradient(rgba(180, 180, 180, 0.2) 1px, transparent 1px) left top / $base-line-height $base-line-height;
 }

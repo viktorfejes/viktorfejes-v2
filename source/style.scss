@@ -10,17 +10,36 @@ body {
     // }
 }
 
+.logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #191919;
+    border-radius: 50%;
+    padding: 18px 15px 15px;
+
+    svg {
+        color: white;
+        display: block;
+        fill: white;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-    padding: $base-line-height 0 0 0;
+    padding: $base-line-height 1rem $base-line-height 1rem;
+}
+
+.text {
+    margin-top: 7rem;
 }
 
 .title {
     width: 100%;
-    background-color: #222;
-    color: #fff;
+    // background-color: #222;
+    color: #222;
     padding: 2rem 0 5rem 0;
 }
 
@@ -28,18 +47,6 @@ body {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-}
-
-.logo {
-    display: block;
-    width: 40px;
-    height: 40px;
-
-    svg {
-        color: white;
-        display: block;
-        fill: white;
-    }
 }
 
 .links {
@@ -87,14 +94,17 @@ h1 {
     @include h1;
     font-weight: 200;
     max-width: 920px;
-    line-height: $base-line-height * 2.5;
+    color: #191919;
+    font-size: 64px;
+    line-height: 1.4;
+    margin-bottom: $base-line-height*2.8;
 }
 
 p {
     @include h5;
     font-weight: 200;
     line-height: $base-line-height *1.3;
-    color: #5b5e61;
+    color: #222;
 }
 
 .bio {
@@ -102,8 +112,28 @@ p {
 
     a {
         color: inherit;
+        font-weight: 400;
         // border-bottom: 1px solid currentColor;
-        text-decoration: underline;
+        // text-decoration: underline;
+        position: relative;
+
+        &::before {
+            content: '';
+            top: 100%;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            background: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
+            border-radius: 2rem;
+        }
+
+        &:hover {
+            color: #1e90ff;
+
+            &::before {
+                background: #1e90ff;
+            }
+        }
     }
 }
 
@@ -145,4 +175,17 @@ p {
             transform: translateX(100%);
         }
     }
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: $main-font-family;
+    font-size: 1.25rem;
+    font-weight: 200;
+    color: rgb(122, 122, 122);
+    cursor: pointer;
+    margin-top: $base-line-height;
+    text-decoration: underline;
 }
