@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -127,7 +128,7 @@ body {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 1.95rem 1rem 1.95rem 1rem;
+  padding: 1.95rem 1rem 5.85rem 4rem;
 }
 
 .text {
@@ -268,6 +269,94 @@ p {
   cursor: pointer;
   margin-top: 1.95rem;
   text-decoration: underline;
+}
+
+.switch-container {
+  position: relative;
+}
+
+.text:hover .switch-display {
+  opacity: 100%;
+}
+
+.bio.long {
+  display: none;
+}
+
+.switch-display {
+  position: absolute;
+  top: 10px;
+  left: -3rem;
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  width: 26px;
+  height: 40px;
+  border-radius: 30px;
+  background: #d3d3d3;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  transition: opacity 1s;
+}
+.switch-display .switch-circle {
+  display: block;
+  height: 22px;
+  width: 22px;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  transition: all 0.2s;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.35);
+}
+.switch-display .switch-circle::after {
+  content: "⋯";
+  display: block;
+  position: absolute;
+  color: #919191;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle:checked ~ .bio.long {
+  display: block;
+}
+.toggle:checked ~ .bio.short {
+  display: none;
+}
+.toggle:checked ~ .switch-display {
+  background: #1e90ff;
+}
+.toggle:checked ~ .switch-display .switch-circle {
+  transform: translateY(14px) rotate(90deg);
+}
+
+@media (max-width: 912px) {
+  h1 {
+    font-size: 6.5vw;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .rwd-break {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
