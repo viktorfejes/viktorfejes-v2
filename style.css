@@ -117,6 +117,7 @@ body {
   background: #191919;
   border-radius: 50%;
   padding: 18px 15px 15px;
+  margin-left: 3rem;
 }
 .logo svg {
   color: white;
@@ -128,10 +129,11 @@ body {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 1.95rem 1rem 5.85rem 4rem;
+  padding: 1.95rem 1rem 5.85rem 1rem;
 }
 
 .text {
+  padding-left: 3rem;
   margin-top: 7rem;
 }
 

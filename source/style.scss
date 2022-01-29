@@ -17,6 +17,7 @@ body {
     background: #191919;
     border-radius: 50%;
     padding: 18px 15px 15px;
+    margin-left: 3rem;
 
     svg {
         color: white;
@@ -29,10 +30,11 @@ body {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-    padding: $base-line-height 1rem $base-line-height*3 4rem;
+    padding: $base-line-height 1rem $base-line-height*3 1rem;
 }
 
 .text {
+    padding-left: 3rem;
     margin-top: 7rem;
 }
 
