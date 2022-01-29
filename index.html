@@ -27,46 +27,58 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="title">
-        <!-- <nav class="links">
-            <!-- <div class="logo">
-                <svg viewBox="0 0 678 678"><path d="M607.241 139.965H239.288l99.324 198.647 81.211-162.423h169.306L338.612 677.223 0 0h677.223l-69.982 139.965z"></path></svg>
-            </div>
-            <ul>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Gumroad</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Discord</a></li>
-                <li><a href="#">Email</a></li>
-            </ul>
-        </nav> -->
-        <div class="title-container">
-            <h1>Viktor Fejes is a Digital Artist working in the advertising field.</h1>
-            <div class="button" style="display:none;">
-                <span class="label">Short Bio</span>
-                <div class="switch">
-                    <div class="switch-outline">
-                        <div class="switch-circle long"></div>
-                    </div>
-                </div>
-                <span class="label">Long Bio</span>
-            </div>
-        </div>
-    </header>
     <div class="container">
-        <div class="bio short show">
-            <p>
-
-                <!-- Viktor Fejes is the Creative Director of Gild Studios, where he works, with his partner Flora, to realise wonderful and captivating creations for the ad industry. He is a retoucher and 3d artist by trade, and an English philologist by education. Though, the latter has no bearing on his life except for being familiar with some fancy words. You might have seen him around on educational websites, like CreativeLive, KelbyOne, or KTE -->
-
-                Viktor Fejes is the Creative Director of <a href="https://gildstudios.com">Gild Studios</a>, where he works to realise wonderful and captivating creations for the ad industry. He is a retoucher and 3d artist by trade, and an English philologist by education. Though, the latter has no bearing on his life except for knowing words like fricative.
-            </p>
-            <p>
-                You might have seen him around on educational websites, including <a href="https://gildstudios.com">CreativeLive</a>, <a href="https://gildstudios.com">KelbyOne</a>, or <a href="https://gildstudios.com">KTE</a> as he likes to share his knowledge with anyone willing to learn. In 2019 he was named as one of Forbes' 30 under 30. In his spare time he likes to code, cook, and to tinker with mechanical keyboards. If you want to contact him you can get on his <a href="https://gildstudios.com">Discord</a> channel or send him an <a href="https://gildstudios.com">email</a>. He lives in Los Angeles, CA with his inimitable wife, Flora.
-            </p>
+        <div class="logo">
+            <svg viewBox="0 0 678 678"><path d="M607.241 139.965H239.288l99.324 198.647 81.211-162.423h169.306L338.612 677.223 0 0h677.223l-69.982 139.965z"></path></svg>
         </div>
+        <div class="text">
+            <h1>Viktor <span class="pho" title="something">Fejes</span> creates imagery,<br class="rwd-break">
+            utilising CG & post production</h1>
 
-        <div class="bio long"></div>
+            <div class="switch-container">
+                <input type="checkbox" id="toggle" class="toggle">
+                <label for="toggle" class="switch-display" title="Switch between short and long form bio">
+                    <span class="switch-circle"></span>
+                </label>
+    
+                <div class="bio short">
+                    <p>
+                        Viktor is the Creative Director of <a href="https://gildstudios.com">Gild Studios</a>. You might have seen him around on educational websites, including <a href="https://creativelive.com" target="_blank">CreativeLive</a>, <a href="https://members.kelbyone.com/author/vfejes/">KelbyOne</a>, or <a href="https://karltayloreducation.com/section/advanced-photoshop-for-photographers/">KTE</a>. If you want to contact him you can join his <a href="https://discord.gg/TDFyDYmsBH">Discord</a> channel. He lives in Los Angeles, CA.
+                    </p>
+                </div>
+    
+                <div class="bio long">
+                    <p>
+                        Viktor is the Creative Director of <a href="https://gildstudios.com">Gild Studios</a>, which he founded to realise wonderful and captivating creations for the ad industry. He is a retoucher and 3d artist by trade, and an English philologist by education. Though, the latter has no bearing on his life except sometimes going "uhm, actually" when something vaguely related to linguistics comes up.
+                    </p>
+                    <p>
+                        You might have seen him around on educational platforms and conferences, including <a href="https://creativelive.com" target="_blank">CreativeLive</a>, <a href="https://members.kelbyone.com/author/vfejes/">KelbyOne</a>, or <a href="https://karltayloreducation.com/section/advanced-photoshop-for-photographers/">KTE</a> as he believes sharing is vital for the advancement of this craft. His most useful tools can be found on his <a href="https://gumroad.com/viktorfejes">Gumroad</a> and his free videos on <a href="https://www.youtube.com/c/viktorfejes">YouTube</a>. In 2019 he was named as one of Forbes' 30 under 30. He is not under thirty anymore.
+                    </p>
+                    <p>
+                        Some things he likes, including but not limited to, and in no particular order: coding, cooking, mechanical keyboards, soulsborne games, mountains, challenges, and diving into new projects.
+                    </p>
+                    <p>
+                        If you want to contact him you can join his <a href="https://discord.gg/TDFyDYmsBH">Discord</a> channel or send him an <a href="mailto:viktor@viktorfejes.com">email</a>. He lives in Los Angeles, CA.
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!-- <label for="toggle" class="switch-display" title="Switch between short and long form bio">
+                <span class="switch-circle"></span>
+            </label> -->
+            <!-- <button class="expand-btn">Less words -</button> -->
+
+            <div class="socials" style="display: none;">
+                <ul>
+                    <li><a href="#">Gumroad</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
